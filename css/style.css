@@ -90,6 +90,9 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+#dataShow {
+  padding: 0px 0rem 0 4rem;
+}
 /*!General Styles End*/
 /* Sidebar Style Start */
 .sidebar {
@@ -131,6 +134,10 @@ body {
 /* Search Style Start*/
 #searchPage {
   z-index: 999999;
+}
+#searchPage{
+  padding: 0px 0rem 0 4rem;
+
 }
 .searchbar::placeholder {
   color: #a3a3a3;

@@ -196,14 +196,21 @@ async function getCategoriesMenu() {
   let categories = "";
   for (let i = 0; i < response.categories.length; i++) {
     categories += `<div class="col-lg-3 col-md-4 cursor-pointer">
-    <div class="foodCard text-center" onclick="showMealsCategory('${response.categories[i].strCategory}')">
+    <div class="foodCard text-center" onclick="showMealsCategory('${
+      response.categories[i].strCategory
+    }')">
       <div class="foodImg">
-        <img src="${response.categories[i].strCategoryThumb}" class="img-fluid" alt="" />
+        <img src="${
+          response.categories[i].strCategoryThumb
+        }" class="img-fluid" alt="" />
       </div>
       <div class="foodDetails text-center bg-light">
         <h4 class="fw-bold">${response.categories[i].strCategory}</h4>
         <p>
-          ${response.categories[i].strCategoryDescription}
+          ${response.categories[i].strCategoryDescription
+            .split(" ")
+            .slice(0, 20)
+            .join(" ")}
         </p>
       </div>
     </div>
@@ -410,7 +417,7 @@ function getContactUsMenu() {
     </div>
     <button
       id="submitBtn"
-      class="btn btn-outline-danger px-2 mt-4"
+      class="btn btn-outline-danger px-2 mt-4 disabled"
     >
       Submit
     </button>
