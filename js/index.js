@@ -121,7 +121,7 @@ function showMealDetails(arr) {
   </div>
 </div>
 <div class="col-md-8 position-relative">
-<span class="position-absolute end-0 top-0 text-warning cursor-pointer" id="closeMeal"><i class="fa-light fa-circle-xmark fa-2x"></i></span>
+<span class="position-absolute end-0 top-0 text-warning cursor-pointer" id="closeMeal"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
   <div class="mealDesc text-white mx-3">
     <h2 class="fw-bolder my-3">Instructions</h2>
     <p class="fw-light">
