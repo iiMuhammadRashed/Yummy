@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-black">
+    <div class="loaderScreen"><span class="loader"></span></div>
+    <!-- Sidebar Start -->
+    <div class="sidebar vh-100">
+      <div
+        class="sidebarDetails h-100 bg-black d-flex flex-column justify-content-between position-relative"
+      >
+        <div class="list p-4">
+          <ul class="list-unstyled text-white">
+            <li id="searchMenu">Search</li>
+            <li id="categoriesMenu">Categories</li>
+            <li id="areaMenu">Area</li>
+            <li id="ingredientsMenu">Ingredients</li>
+            <li id="contactUsMenu">Contact Us</li>
+          </ul>
+        </div>
+        <div class="rights text-white p-3">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-solid fa-globe"></i></span>
+          <p>Copyright Beka© 2023 All Rights Reserved.</p>
+        </div>
+        <div
+          class="bar h-100 bg-white text-center d-flex flex-column justify-content-between position-absolute"
+        >
+          <div class="iconImg">
+            <img src="images/logo.png" class="w-75 py-3" alt="logo" />
+          </div>
+          <div class="barsIcon w-100">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </div>
+          <div class="social">
+            <ul class="list-unstyled w-100">
+              <li>
+                <a href="#"><i class="fa-solid fa-globe text-black"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-share-nodes text-black"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+    <!-- Search Start -->
+    <div class="container">
+      <div class="row my-4  d-none" id="searchPage">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control bg-transparent text-white searchbar"
+            placeholder="Search by Name"
+            id="searchByName"
+            oninput="getSearchName(this.value)"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            maxlength="1"
+            class="form-control bg-transparent text-white searchbar"
+            placeholder="Search by First Letter"
+            id="searchByFirstLetter"
+            oninput="getSearchFirstLetter(this.value)"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Search End -->
+
+    <div class="dataRow">
+      <div class="container">
+        <div class="row g-4 my-3" id="dataShow"></div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
